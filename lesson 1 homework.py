@@ -34,5 +34,5 @@ elif (x >=7 and x <=9):
         x = x + 1
         print x
         j = j +1
-else:
-        print 'Ошибка'
+elif (x > 10):
+    print ('Ошибка')
