@@ -40,7 +40,7 @@ print func3()
 # четвертая задача
 def newfunc(*args):
     x = 1
-    p = [x**i for i in args]
+    p = [x**x for x in args]
     return p
 print newfunc(1,2,3)
 
