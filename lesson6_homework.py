@@ -2,17 +2,13 @@
 
 from abc import ABCMeta, abstractmethod, abstractproperty
 
-class Enter(object):
+class Enter():
     __metaclass__ = ABCMeta
-    x = int(raw_input('Введите число от 1 до 9: '))
+    x = 0
+
+class Func(Enter):
     def __init__(self):
-        x = 0
-
-    @abstractmethod
-    def func0(self):
-        pass
-
-class Func(object):
+        self.x = int(raw_input('Введите число от 1 до 9: '))
     def func1(self):
         self.s = str(raw_input("введите строку: "))
         self.n = int(input('введите число повторов строки: '))
@@ -34,8 +30,7 @@ class Func(object):
             self.j = self.j + 1
 
 
-
-class Finish(Enter, Func):
+class Finish(Func):
     def func0(self):
         if (self.x >= 1 and self.x <=3):
             print self.func1()
@@ -47,5 +42,8 @@ class Finish(Enter, Func):
             print ('Error')
         return self.x
 
+
 z = Finish()
 z.func0()
+
+
