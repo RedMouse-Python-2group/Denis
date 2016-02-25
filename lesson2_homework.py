@@ -21,10 +21,11 @@ print (min(z, key=len))
 #4
 a = str(raw_input("Введите предложение: "))
 b = str(raw_input('Введите слово для поиска: '))
-c = (a[a.find(b): len(b)])
+c = (a.find(b))
 print c
 
 #5
 a = str(raw_input('Введите предложение: '))
 b = a.split(' ')
-print len(b)
+print 'В предложении -', len(b), 'слова'
+
