@@ -9,9 +9,11 @@ def func1():
     while i < n:
         print s
         i = i + 1
+        
 def func2 (x):
     m = int(input('Введите степень в которую нужно возвести число: '))
     return x ** m
+    
 def func3(x):
     j = 0
     while j < 10:
@@ -19,12 +21,12 @@ def func3(x):
         print x
         j = j +1
 
-if x >= 1 and x <= 3:
+if 1 <= x <= 3:
     print func1()
-elif x >= 4 and x <=6:
-    print func2(x)
-elif x >= 7 and x <=9:
-    print func3(x)
+elif 4 <= x <= 6:
+    print func2()
+elif 7 <= x <= 9:
+    print func3()
 else:
     print ('Ошибка')
 
@@ -56,13 +58,3 @@ elif x >= 7 and x <=9:
     print lesson3_module.func3(x)
 else:
     print ('Ошибка')
-
-
-
-
-
-
-
-
-
-
