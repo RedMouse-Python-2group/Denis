@@ -87,7 +87,7 @@ class Dragon(Hero, HeroesDragons):
             else:
                 pass
 
-# game constructor, forces infinite loop till hero or dragon ['hp] wil <= 0
+# game constructor, forces infinite loop till hero or dragon ['hp'] will <= 0
 class Game(HeroesDragons, Hero, Dragon):
     def __init__(self):
         while True:
