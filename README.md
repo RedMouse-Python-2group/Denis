@@ -9,4 +9,3 @@
 
 <b>css - half bootstrap, half bullshit</b>
 
-Problems: Posts app - template - detail.html - urls update, delete
