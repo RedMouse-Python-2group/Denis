@@ -27,8 +27,8 @@
 {{ instance.content }}
 {% if username %}
 <div id='edit buttons'>
-<a href = "{% url 'update' %}"><input type='submit' class='btn btn-default' value = 'Редактировать запись'></a>
-<a href = "{% url 'delete' %}"><input type='submit' class='btn btn-default' value = 'Удалить запись'></a>
+<a href = "{% url 'update' instance.id %}"><input type='submit' class='btn btn-default' value = 'Редактировать запись'></a>
+<a href = "{% url 'delete' instance.id %}"><input type='submit' class='btn btn-default' value = 'Удалить запись'></a>
 </div>
 {% else %}
 <h3>Не авторизированный пользователь не может редактировать статьи</h3>
